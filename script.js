@@ -5,7 +5,7 @@ const insereTimes = async () => {
         const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/teams/?league=72&season=2023&', {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '368d7d64e7mshe3ff74c8b62bd3ep1a1695jsn51114961df92',
+                'X-RapidAPI-Key': 'your-key-here',
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
             }
         });
@@ -39,7 +39,7 @@ const buscar = async (tipo) => {
         const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/fixtures?season=2023&league=72&team=${idTimeSelecionado}`, {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '368d7d64e7mshe3ff74c8b62bd3ep1a1695jsn51114961df92',
+                'X-RapidAPI-Key': 'your-key-here',
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
             }
         });
@@ -163,7 +163,7 @@ const insereEstatisticas = async () => {
         const response = await fetch(`https://api-football-v1.p.rapidapi.com/v3/fixtures?season=2023&league=72&team=${idTimeSelecionado}`, {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '368d7d64e7mshe3ff74c8b62bd3ep1a1695jsn51114961df92',
+                'X-RapidAPI-Key': 'your-key-here',
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
             }
         });
